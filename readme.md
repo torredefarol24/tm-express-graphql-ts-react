@@ -1,9 +1,9 @@
 # Express React Graphql App
 
-##### Backend: Node (Express in Typescript)
-##### CI/CD : Travis
+#### Backend: Node (Express in Typescript)
+#### CI/CD : Travis
 
-
+<br>
 Checklist
 
 - Install Package Dependencies

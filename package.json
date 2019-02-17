@@ -8,6 +8,7 @@
     "watch-ts": "echo \"Watching TypeScript\" && tsc -w",
     "watch-js": "echo \"Watching Node \" && nodemon ./build/server.js",
     "start": "echo \"Starting App\" && node ./build/server.js",
+    "postinstall" : "yarn build",
     "build" : "echo \"Building App\" && node_modules/.bin/tsc && echo \"Build Finished\" ",
     "test-ts": "mocha --require ts-node/register ./source/test/**/*.ts",
     "test" : "echo \"Testing Js-App\" && mocha ./build/test/main.js"
@@ -25,5 +26,8 @@
     "chai": "^4.2.0",
     "mocha": "^5.2.0",
     "ts-node": "^8.0.2"
+  },
+  "engines": {
+    "node": "8.11.4"
   }
 }
