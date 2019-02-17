@@ -5,12 +5,12 @@
   "author": "Toufiq <burningraven06@gmail.com> (https://twitter.com/burningraven06)",
   "license": "MIT",
   "scripts": {
-    "watch-ts": "tsc -w",
-    "watch-js": "nodemon ./build/server.js",
-    "start": "node ./build/server.js",
-    "build" : "node_modules/.bin/tsc",
+    "watch-ts": "echo \"Watching TypeScript\" && tsc -w",
+    "watch-js": "echo \"Watching Node \" && nodemon ./build/server.js",
+    "start": "echo \"Starting App\" && node ./build/server.js",
+    "build" : "echo \"Building App\" && node_modules/.bin/tsc && echo \"Build Finished\" ",
     "test-ts": "mocha --require ts-node/register ./source/test/**/*.ts",
-    "test" : "mocha ./build/test/main.js"
+    "test" : "echo \"Testing Js-App\" && mocha ./build/test/main.js"
   },
   "dependencies": {
     "@types/body-parser": "^1.17.0",

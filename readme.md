@@ -1,6 +1,8 @@
 # Express React Graphql App
 
 ##### Backend: Node (Express in Typescript)
+##### CI/CD : Travis
+
 
 Checklist
 
