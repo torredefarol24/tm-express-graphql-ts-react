@@ -1,16 +1,16 @@
 {
   "name": "tm-graphql-react",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./build/server.js",
   "author": "Toufiq <burningraven06@gmail.com> (https://twitter.com/burningraven06)",
   "license": "MIT",
   "scripts": {
     "watch-ts": "tsc -w",
-    "watch-js": "nodemon build/server.js",
-    "start": "node build/server.js",
+    "watch-js": "nodemon ./build/server.js",
+    "start": "node ./build/server.js",
     "build" : "node_modules/.bin/tsc",
-    "test-ts": "mocha --require ts-node/register source/test/**/*.ts",
-    "test" : "mocha build/test/main.js"
+    "test-ts": "mocha --require ts-node/register ./source/test/**/*.ts",
+    "test" : "mocha ./build/test/main.js"
   },
   "dependencies": {
     "@types/body-parser": "^1.17.0",
