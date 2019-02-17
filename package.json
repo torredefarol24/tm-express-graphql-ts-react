@@ -9,7 +9,7 @@
     "watch-js": "nodemon build/server.js",
     "start": "node build/server.js",
     "test-ts": "mocha --require ts-node/register source/test/**/*.ts",
-    "test" : "mocha build/test"
+    "test" : "mocha build/test/main.js"
   },
   "dependencies": {
     "@types/body-parser": "^1.17.0",
