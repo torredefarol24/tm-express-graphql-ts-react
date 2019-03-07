@@ -7,27 +7,31 @@
 Checklist
 
 - Install Package Dependencies
-- Build App
+- Build Api from source
 
 
 
 ### Install Package Dependencies
 ```
+$ cd api
 $ yarn install
 ```
 
 ### Build App
 ```
+$ cd api
 $ yarn build
 ```
 
 ### Start Api (Dev Mode)
 ```
+$ cd api
 $ yarn watch-ts
 $ yarn watch-js
 ```
 
 ### Start Api (Prod Mode)
 ```
+$ cd api
 $ yarn start
 ```
