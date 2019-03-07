@@ -20,5 +20,4 @@ class ExpressGraphqlApp {
 	}
 }
 
-const backend_instance = new ExpressGraphqlApp()
-export default backend_instance.apiApp
+export default ExpressGraphqlApp

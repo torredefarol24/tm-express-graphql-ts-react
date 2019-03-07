@@ -1,6 +1,9 @@
-import app from './app/main'
+import ExpressGraphApp from './app/main'
+import logger from './bootstrap/winston'
+
+const expGrpApp = new ExpressGraphApp()
 
 const port = process.env.PORT || 4000
-const listenCallBack = () => console.log("Listening on port: ", port)
+const listenCB = () => logger.info(`App Listening on port : ${port}`)
 
-const server = app.listen(port, listenCallBack)
+const server = expGrpApp.apiApp.listen(port, listenCB)
