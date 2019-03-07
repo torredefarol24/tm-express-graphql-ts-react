@@ -1,7 +1,10 @@
 # Express React Graphql App
 
-#### Backend: Node (Express in Typescript)
-#### CI/CD : Travis
+#### Backend	: Node (Express in Typescript)
+#### CI/CD 		: Travis
+#### Query		: GraphQL
+#### Frontend	: React (TS)	
+
 
 <br>
 Checklist
