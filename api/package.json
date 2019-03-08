@@ -5,13 +5,23 @@
   "author": "Toufiq <burningraven06@gmail.com> (https://twitter.com/burningraven06)",
   "license": "MIT",
   "scripts": {
-    "watch-ts": "echo \"Watching TypeScript\" && tsc -w",
-    "watch-js": "echo \"Watching Node \" && nodemon ./build/server.js",
-    "start": "echo \"Starting App\" && node ./build/server.js",
-    "postinstall": "yarn build",
-    "build": "echo \"Build Started\" && node_modules/.bin/tsc && echo \"Build Finished\" ",
+    "watch-ts": "echo \" \nWatching TypeScript\" && tsc -w",
+    "watch-js": "echo \" \nWatching Node\" && nodemon ./build/server.js",
+    "start": "node ./build/server.js",
+    "postinstall": "yarn build && yarn copy_public",
+
+    "print_build_started" : "echo \"\nTS Build Started\" ",
+    "print_build_finished" : "echo \"\n TS Build Finished\" ",
+    "build": "yarn print_build_started && node_modules/.bin/tsc &&  yarn print_build_finished",
+
     "test-ts": "mocha --require ts-node/register ./source/test/**/*.ts",
-    "test": "echo \"Test Started\" && mocha ./build/test/main.js && echo \"Test Completed\" "
+    "print_test_started" : "echo \" \nTest Started\" ",
+    "print_test_completed" : "echo \"\nTest Completed\" ",
+    "test": "yarn print_test_started && mocha ./build/test/main.js && yarn print_test_completed",
+
+    "print_copy_started" : "echo \"\nStarted copying 'public' dir from SRC to source\" ",
+    "print_copy_finished" : "echo \"\nFinished copying 'public' dir successfully\" ",
+    "copy_public" : "yarn print_copy_started && cp -r source/public build/public && yarn print_copy_finished"
   },
   "dependencies": {
     "@types/cors": "^2.8.4",
