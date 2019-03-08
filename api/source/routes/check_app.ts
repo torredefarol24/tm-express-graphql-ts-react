@@ -1,6 +1,7 @@
 import {Router, Request, Response} from 'express'
 const router : Router = Router()
 
+
 const sayHello = (request : Request, response : Response) => {
 	var message = new String("Hey There! " + request.hostname)
 	var context = {

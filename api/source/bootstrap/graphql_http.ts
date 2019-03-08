@@ -2,8 +2,7 @@ const GraphQLHTTP = require('express-graphql')
 import rootSchema from '../graphql/schema';
 
 const graphQLServerOpts = {
-	schema : rootSchema,
-	graphiql : true
+	schema : rootSchema
 }
 
 const graphQLServer = GraphQLHTTP(graphQLServerOpts);

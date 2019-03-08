@@ -36,6 +36,6 @@ const LaunchObj = {
 	fields : () => (LaunchFieldTypes)
 }
 
+// Create Launch Type
 const LaunchType = new GraphQLObjectType(LaunchObj)
-
 export default LaunchType
