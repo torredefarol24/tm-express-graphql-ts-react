@@ -3,8 +3,9 @@ node_js:
 - '10.15.3'
 install:
 # Install Backend Packages & Build Backend Code from Source
-- cd api && yarn install
-- cd api && yarn build
+- cd api 
+- yarn install
+- yarn build
 deploy:
   provider: heroku
   api_key:
