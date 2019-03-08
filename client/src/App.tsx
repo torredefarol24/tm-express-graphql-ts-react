@@ -6,7 +6,8 @@ import Launches from './components/Launches';
 
 
 const ap_client = new ApolloClient({
-	uri : LHOST_GQL_URL
+	// uri : LHOST_GQL_URL,
+	uri : HEROKU_GQL_URL
 })
 
 
