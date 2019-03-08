@@ -20,7 +20,18 @@
     "start": "PORT=4242 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    
+    "print_build_start" : "echo \" \nStarted React production build\n \" ",
+    "print_build_end" : "echo \" \nFinished React production build successfully\n \" ",
+    "build_app" : "yarn print_build_start && yarn build && yarn print_build_end",
+
+    "print_build_copy_start" : "echo \" \nStarted copying Prod build to API public serving DIR\n \" ",
+    "print_build_copy_end" : "echo \" \nFinished copying Prod build to API public serving DIR successfully\n \"",
+    "copy_build" : "cp -r build/ ../api/source/public && cp -r build ../api/build/public",
+    "copy_after_build" : "yarn print_build_copy_start && yarn copy_build && yarn print_build_copy_end",
+
+    "serve_to_api" : "yarn build_app && yarn copy_after_build"
   },
   "eslintConfig": {
     "extends": "react-app"
