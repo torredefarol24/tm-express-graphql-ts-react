@@ -1,4 +1,4 @@
-# Express React Graphql App
+# Express React Graphql (TS) App
 
 #### Backend	: Node (Express in Typescript)
 #### CI/CD 		: Travis
@@ -10,7 +10,7 @@
 Checklist
 
 - Install Package Dependencies
-- Build Api from source
+- Build Api from source (Optional)
 
 
 
@@ -20,8 +20,12 @@ $ cd api
 $ yarn install
 ```
 
-### Build App
+### Build Api (From Source)
 ```
+
+# Running 'yarn install' builds the API from source automatically, 
+# However, if you've made changes, build it again by running : 
+
 $ cd api
 $ yarn build
 ```
